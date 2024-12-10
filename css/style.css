@@ -1,0 +1,92 @@
+#wrapper {
+    display: grid;
+    height: 92vh;
+    margin: 1.5vw;
+    gap: 2vw;
+    grid-template-columns: 50vh auto;
+    grid-template-rows: 12.5vh 15vh auto 12.5vh;
+    grid-template-areas:
+    'nv nv nv nv'
+    'hd hd hd hd'
+    'as mn mn mn'
+    'ft ft ft ft'
+}
+
+.knapp {
+    color: #8BC34A;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: nv;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+header {
+    grid-area: hd;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 75px;
+    color: beige;
+}
+
+aside {
+    display: flex;
+    align-content: space-between;
+    grid-area: as;
+    background: beige;
+    border-radius: 8px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 5%;    
+}
+
+main {
+    grid-area: mn;
+    background-image: url('../img/gronsaker.jpg');
+    border-radius: 8px;
+    padding: 5%;
+
+}
+
+img {
+    height: 60vh;
+}   
+
+footer {
+    grid-area: ft;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+body {
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 75px;    
+    background-image: url('../img/backgroundbona.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
